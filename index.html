@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Hoskins – À propos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1e245c57c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Arrière-plan animé -->
+  <div class="background">
+    <div class="bulle bulle1"></div>
+    <div class="bulle bulle2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+        <div class="logo-symbol">
+         <img src="images/logo-brain.png" alt="logo cerveau" class="logo-brain">
+       </div>
+        <a href="index.html" class="logo">Andrew Hoskins</a>
+      </div>
+      <div class="menu">
+        <a href="recherches.html">Recherches</a>
+        <a href="publications.html">Publications</a>
+        <a href="apropos.html">À propos</a>
+        <a href="presence.html">Contact</a>
+        <div class="toggle-theme">
+        <button type="button" id="light-mode-btn" class="theme-toggle" aria-label="Mode clair">☀️</button>
+        <button type="button" id="dark-mode-btn" class="theme-toggle" aria-label="Mode foncé" style="display:none;">🌙</button>
+      </div>
+        <span class="menu-underline"></span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="content">
+    <section class="split-intro">
+      <video class="split-intro-bg-video" autoplay loop muted playsinline>
+      <source src="images/fond.mp4" type="video/mp4">
+      </video>
+  <div class="split-intro-left">
+    <span class="split-intro-label">UNIVERSITAIRE BRITANNIQUE</span>
+    <h1 class="split-intro-title">
+      Andrew Hoskins
+    </h1>
+    <div class="split-intro-subtitle">
+      entre digital, souvenirs et traumas collectifs
+    </div>
+    <div class="split-btn-row">
+      <a href="recherches.html" class="split-btn split-btn-main">Recherches</a>
+      <a href="publications.html" class="split-btn split-btn-secondary">Publications</a>
+    </div>
+    <div class="split-intro-divider"></div>
+    <div class="split-intro-stats-row">
+      <div class="split-intro-stat">
+        <span class="split-intro-stat-num">25+</span>
+        <span class="split-intro-stat-label">Années d'expérience</span>
+      </div>
+      <div class="split-intro-stat">
+        <span class="split-intro-stat-num split-intro-stat-pub">10+</span>
+        <span class="split-intro-stat-label">Publications</span>
+      </div>
+      <div class="split-intro-stat">
+        <span class="split-intro-stat-num split-intro-stat-conf">250+</span>
+        <span class="split-intro-stat-label">Conférences</span>
+      </div>
+    </div>
+  </div>
+  <div class="split-intro-right">
+    <div class="split-intro-card">
+      <div class="split-intro-photo-wrapper">
+        <span class="split-intro-photo-glow"></span>
+        <img src="images/Andrew-rond.png" alt="Andrew Hoskins" class="split-intro-photo" />
+        <span class="split-intro-img-tooltip">26 janvier 1967<br>Édimbourg</span>
+      </div>
+      <div class="split-intro-card-text">
+        Andrew Hoskins est un universitaire britannique reconnu pour son engagement dans la vie académique et la formation universitaire.<br>
+        <span class="split-intro-link-label">Accédez à son parcours ici :</span> 
+        <a href="recherches.html" class="split-intro-link">Recherches</a>
+      </div>
+      <span class="split-intro-dots"></span>
+    </div>
+  </div>
+</section>
+
+  <section class="excellence-section">
+  <h1 class="excellence-title">
+    Un parcours d'excellence
+  </h1>
+  <p class="excellence-desc">
+    De l’Université de Kent à Glasgow, une trajectoire marquée par la collaboration et l’innovation
+  </p>
+  <div class="cards-row">
+    <!-- Carte 1 (violette) -->
+    <div class="card card-blue">
+      <span class="card-emoji card-emoji-grad">🎓</span>
+      <h2 class="card-heading">De Kent à Glasgow</h2>
+      <p>
+        Titulaire d’un doctorat de l’Université de Kent, Andrew Hoskins a enseigné dans plusieurs institutions britanniques avant de rejoindre l’Université de Glasgow, où il est actuellement Professor of Global Security au sein de la School of Social and Political Sciences.
+      </p>
+      <div class="card-tags">
+        <span class="card-tag card-tag-green">Doctorat</span>
+        <span class="card-tag card-tag-lightgreen">Professeur</span>
+      </div>
+    </div>
+    <!-- Carte 2 (bleue, collaboration) -->
+    <div class="card card-purple">
+      <span class="card-emoji card-emoji-hand">🤝</span>
+      <h2 class="card-heading">Collaboration & Mentorat</h2>
+      <p>
+        Tout au long de sa carrière, il s'est distingué par son sens de la collaboration, son attention au dialogue interdisciplinaire et son accompagnement bienveillant des jeunes chercheurs. Il a occupé divers rôles de direction et de coordination académique.
+      </p>
+      <div class="card-tags">
+        <span class="card-tag card-tag-blue">Interdisciplinaire</span>
+        <span class="card-tag card-tag-violet">Direction</span>
+      </div>
+    </div>
+    <!-- Carte 3 (turquoise, humaniste) -->
+    <div class="card card-pink">
+      <span class="card-emoji card-emoji-star">✨</span>
+      <h2 class="card-heading">Une approche humaniste</h2>
+      <p>
+        Curieux, accessible et engagé, Andrew Hoskins incarne une vision ouverte et humaine du monde universitaire, fondée sur le partage des savoirs et la construction collective de la connaissance.
+      </p>
+      <div class="card-tags">
+        <span class="card-tag card-tag-pink">Partage</span>
+        <span class="card-tag card-tag-purple">Humanisme</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+<script src="script.js"></script>
+
+<!-- Rectangles expertise en bas de page -->
+<div class="fields-expertise-section">
+   <p>
+      Il adopte une approche <span class="underline-animated">pluridisciplinaire</span> grâce à ses connaissances dans de nombreux domaines.
+  </p>
+  <div class="fields-expertise-row">
+  <div class="field-rectangle-row">
+    <span class="field-icon-row img-gradient-bg">📖</span>
+    </span>
+    <span class="field-label-row">Sciences de l'information</span>
+  </div>
+  <div class="field-rectangle-row">
+    <span class="field-icon-row img-gradient-bg">🧠</span>
+    <span class="field-label-row">Psychologie</span>
+  </div>
+  <div class="field-rectangle-row">
+    <span class="field-icon-row img-gradient-bg">🗞️</span>
+    <span class="field-label-row">Histoire</span>
+  </div>
+  <div class="field-rectangle-row">
+    <span class="field-icon-row img-gradient-bg">📱</span>
+    <span class="field-label-row">Médias</span>
+  </div>
+  </div>
+</div>
+  <footer class="footer">
+  <p>
+    2025 Andrew Hoskins - Site réalisé par Laura Cocq--Duché.
+  </p>
+   <hr class="footer-separator">
+  <!-- Section deux colonnes -->
+  <div class="footer-columns">
+    <div class="footer-column">
+      <p>
+        Toutes les informations disponibles sur ce site ont été tirées à partir de sources diverses telles que les pages web :<br>
+      </p>
+      <ul class="footer-sources">
+        <li>andrewhoskins.net</li>
+        <li>scholar.google.com</li>
+        <li>euasu.org/academicians</li>
+        <li>researchgate.net/publication</li>
+        <li>global.oup.com/academic</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <p>
+        Merci pour l'attention que vous avez porté à ce site. Je suis actuellement étudiante en Information-Communication à l'IUT Bordeaux Montaigne mais également auto-entrepreneuse.<br><br>
+        N'hésitez pas à m'écrire à l'adresse suivante pour toute demande ou proposition : <br>
+        l.cocqduche@gmail.com
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

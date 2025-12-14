@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Hoskins – Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Arrière-plan animé -->
+  <div class="background">
+    <div class="bulle bulle1"></div>
+    <div class="bulle bulle2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+      <div class="logo-symbol">
+         <img src="images/logo-brain.png" alt="logo cerveau" class="logo-brain">
+       </div>
+        <a href="index.html" class="logo">Andrew Hoskins</a>
+      </div>
+      <div class="menu">
+        <a href="recherches.html">Recherches</a>
+        <a href="publications.html">Publications</a>
+        <a href="apropos.html">À propos</a>
+        <a href="presence.html"class="active">Contact</a>
+        <div class="toggle-theme">
+        <button type="button" id="light-mode-btn" class="theme-toggle" aria-label="Mode clair">☀️</button>
+        <button type="button" id="dark-mode-btn" class="theme-toggle" aria-label="Mode foncé" style="display:none;">🌙</button>
+      </div>
+        <span class="menu-underline"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <section class="section centered-section">
+      <h1>Contact</h1>
+      <div class="section-divider">
+      <span class="section-card-line"></span>
+      <p>
+        Andrew Hoskins intervient régulièrement dans les médias, conférences et débats sur la mémoire, la guerre et les technologies numériques.
+      </p>
+      <ul class="social-list-wrapper">
+        <li>
+          <p class="social-label">Il est présent sur différentes plateformes :</p>
+          <div class="social-list">
+            <div class="social-row">
+              <a class="social-item" href="https://x.com/andrewhoskins">
+                <img class="social-icon" src="images/x.png" alt="X">
+                @andrewhoskins
+              </a>
+              <a class="social-item" href="https://bsky.app/profile/andrewhoskins.bsky.social">
+                <img class="social-icon" src="images/bsky.png" alt="Bluesky">
+                @andrewhoskins.bsky.social
+              </a>
+            </div>
+            <div class="social-row">
+              <a class="social-item" href="https://www.linkedin.com/in/andrew-hoskins-5213b97a/">
+                <img class="social-icon" src="images/linkedin.png" alt="LinkedIn">
+                @Andrew Hoskins
+              </a>
+              <a class="social-item" href="mailto:andrew.hoskins@ed.ac.uk">
+                <img class="social-icon" src="images/mail.png" alt="Email">
+                andrew.hoskins@ed.ac.uk
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="formulaire">
+      <h2>Formulaire de contact</h2>
+      <p>Remplissez le formulaire ci-dessous pour être contacté. Les champs marqués d'un astérisque sont obligatoires.</p>
+      <form id="contact-form" class="contact-table" action="https://formspree.io/f/xjknzozp" method="POST" novalidate>
+        <table>
+          <tr>
+            <th><label for="name">Nom et prénom *</label></th>
+            <td><input type="text" id="name" name="name" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">E-mail *</label></th>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="phone">Téléphone</label></th>
+            <td><input type="tel" id="phone" name="phone" pattern="[+0-9 \-()]*" placeholder="+33 ..."></td>
+          </tr>
+          <tr>
+            <th><label for="message">Message *</label></th>
+            <td><textarea id="message" name="message" rows="5" required></textarea></td>
+          </tr>
+          <tr>
+            <th><label for="consent">Consentement <span aria-hidden="true">*</span></label></th>
+            <td>
+              <label class="consent">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true"> J'accepte que mes coordonnées soient utilisées pour être contacté.
+              </label>
+              <div id="consent-error" class="field-error" role="alert" aria-live="assertive" style="display:none;">Veuillez cocher la case de consentement pour être contacté.</div>
+            </td>
+          </tr>
+        </table>
+        <div class="form-actions">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+      </div>
+      <div id="contact-success" class="contact-success" role="status" aria-live="polite" style="display:none; margin-top:1rem;">
+        Merci ! Votre message a été pris en compte. Nous vous contacterons bientôt.
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+  <p>
+    2025 Andrew Hoskins - Site réalisé par Laura Cocq--Duché.
+  </p>
+   <hr class="footer-separator">
+  <!-- Section deux colonnes -->
+  <div class="footer-columns">
+    <div class="footer-column">
+      <p>
+        Toutes les informations disponibles sur ce site ont été tirées à partir de sources diverses telles que les pages web :<br>
+      </p>
+      <ul class="footer-sources">
+        <li>andrewhoskins.net</li>
+        <li>scholar.google.com</li>
+        <li>euasu.org/academicians</li>
+        <li>researchgate.net/publication</li>
+        <li>global.oup.com/academic</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <p>
+        Merci pour l'attention que vous avez porté à ce site. Je suis actuellement étudiante en Information-Communication à l'IUT Bordeaux Montaigne mais également auto-entrepreneuse.<br><br>
+        N'hésitez pas à m'écrire à l'adresse suivante pour toute demande ou proposition : <br>
+        l.cocqduche@gmail.com
+      </p>
+    </div>
+  </div>
+</footer>
+      
+  <script src="script.js"></script>
+</body>
+</html>

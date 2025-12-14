@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Hoskins – À propos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Arrière-plan animé -->
+  <div class="background">
+    <div class="bulle bulle1"></div>
+    <div class="bulle bulle2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+      <div class="logo-symbol">
+         <img src="images/logo-brain.png" alt="logo cerveau" class="logo-brain">
+       </div>
+        <a href="index.html" class="logo">Andrew Hoskins</a>
+      </div>
+      <div class="menu">
+        <a href="recherches.html">Recherches</a>
+        <a href="publications.html">Publications</a>
+        <a href="apropos.html"class="active">À propos</a>
+        <a href="presence.html">Contact</a>
+        <div class="toggle-theme">
+        <button type="button" id="light-mode-btn" class="theme-toggle" aria-label="Mode clair">☀️</button>
+        <button type="button" id="dark-mode-btn" class="theme-toggle" aria-label="Mode foncé" style="display:none;">🌙</button>
+      </div>
+        <span class="menu-underline"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <section class="section about-section">
+      <!-- Intro générale -->
+        <h1>À propos</h1>
+        <div class="section-card-ap">
+        <p>
+          Ce site a été conçu dans le cadre d’un projet d’architecture de l’information, avec pour objectif de présenter de manière claire, accessible et valorisante les travaux de Andrew Hoskins. <br>
+          Chaque choix graphique, structurel et ergonomique vise à accompagner la découverte de son parcours, de ses recherches et de ses publications, sans surcharge visuelle. <br>
+          L’ensemble de la mise en page cherche un équilibre entre sobriété académique et design contemporain, pour proposer une expérience utilisateur fluide y compris pour un public non spécialiste.
+        </p>
+        </div>
+      </div>
+
+      <!-- 2. Choix graphiques -->
+      <section class="about-block about-graphics">
+  <article class="section-card about-card about-graphics-card">
+    <div class="section-card-header left">
+      <span class="section-card-line"></span>
+      <span class="section-card-title">CHOIX GRAPHIQUES</span>
+    </div>
+    <div class="section-card-body two-columns about-graphics-layout">
+      <div class="about-col about-graphics-left">
+        <p>
+          Le site repose principalement sur une palette de bleu et de violet. Ces couleurs ont été choisies pour leur capacité à évoquer à la fois la fiabilité, la réflexion et la dimension intellectuelle des travaux présentés.
+        </p>
+        <p>
+          L'association de ces deux teintes crée un équilibre visuel entre sérieux institutionnel et modernité, deux aspects centraux de l'identité d'Hoskins et de la manière dont ce site cherche à mettre en valeur ses recherches.
+        </p>
+        <p>
+          Les dégradés, effets de transparence et touches lumineuses prolongent cette identité en rappelant l'univers numérique et les circulations de la mémoire à l'ère des réseaux.
+        </p>
+      </div>
+      <div class="about-col about-graphics-right">
+        <div class="color-row color-row-blue">
+          <div class="color-circle color-circle-blue" aria-hidden="true"></div>
+          <p class="color-text">
+            <strong>Bleu</strong> : associé à la connaissance, à la technologie et à la rigueur scientifique, il reflète le caractère académique du travail d'Andrew Hoskins.
+          </p>
+        </div>
+
+        <div class="color-row color-row-violet">
+          <div class="color-circle color-circle-violet" aria-hidden="true"></div>
+          <p class="color-text">
+            <strong>Violet</strong> : historiquement lié à la créativité et à l'introspection, il fait écho à la dimension plus réflexive de ses travaux sur la mémoire, l'archive et les transformations culturelles provoquées par le numérique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+
+
+      <!-- 3. Ergonomie & accessibilité -->
+<section class="about-block about-ergonomy">
+  <div class="ergonomy-cards">
+    <!-- Card 1 : typographie -->
+    <div class="card ergonomy-card ergonomy-card-blue">
+      <p>
+        La typographie et les espacements ont été pensés pour offrir une lecture confortable, avec une hiérarchie visuelle claire entre titres, sous-titres et paragraphes.
+      </p>
+    </div>
+
+    <!-- Card 2 : blocs d’informations -->
+    <div class="card ergonomy-card ergonomy-card-purple">
+      <p>
+        Les blocs d’informations sont aérés pour faciliter le repérage et la mémorisation des contenus. Les contrastes de couleurs, la taille des textes et la structure par sections contribuent à rendre l’ensemble plus inclusif pour les personnes sensibles au contraste ou à la surcharge informationnelle.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+      <!-- 4. Architecture du site (carrousel) -->
+<section class="about-block about-architecture">
+  <div class="about-architecture-layout">
+    <!-- Bloc gauche : architecture du site -->
+    <article class="section-card about-card about-architecture-card">
+      <div class="section-card-header left">
+        <span class="section-card-title">ARCHITECTURE DU SITE</span>
+      </div>
+      <div class="section-card-body">
+        <p>
+          L’architecture a été structurée autour de quatre sections principales, en complément de la page d’accueil, afin de guider l’utilisateur de façon logique tout en mettant en avant les informations essentielles.
+        </p>
+
+        <div class="about-arch-carousel"
+             role="region"
+             aria-label="Architecture du site">
+          <button class="arch-arrow arch-arrow-prev"
+                  type="button"
+                  aria-label="Section précédente"
+                  disabled>
+            ⬅
+          </button>
+
+          <div class="arch-track-wrapper" tabindex="0">
+            <div class="arch-track">
+              <div class="arch-slide is-active"
+                   data-index="0"
+                   aria-hidden="false">
+                <h3>Recherches 🔍</h3>
+                <p>
+                  Présente le parcours académique d’Andrew Hoskins, ses thématiques de recherche et son évolution dans le domaine des médias numériques.
+                </p>
+              </div>
+
+              <div class="arch-slide"
+                   data-index="1"
+                   aria-hidden="true">
+                <h3>Publications 📚</h3>
+                <p>
+                  Regroupe ses ouvrages, articles et travaux sous forme de galerie pour une consultation intuitive et rapide.
+                </p>
+              </div>
+
+              <div class="arch-slide"
+                   data-index="2"
+                   aria-hidden="true">
+                <h3>À propos 💡</h3>
+                <p>
+                  La page actuelle, qui expose la démarche de conception du site et les intentions derrière ses choix graphiques et ergonomiques.
+                </p>
+              </div>
+
+              <div class="arch-slide"
+                   data-index="3"
+                   aria-hidden="true">
+                <h3>Contact 📬</h3>
+                <p>
+                  Permet de retrouver les liens utiles, les réseaux professionnels associés et un moyen de me contacter.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="arch-arrow arch-arrow-next"
+                  type="button"
+                  aria-label="Section suivante">
+            ⮕
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Bloc droit : bouton mode clair/sombre + texte -->
+  <aside class="about-theme-aside">
+  <div class="about-theme-toggle">
+    <span aria-hidden="true">🌙</span>
+    <button type="button"
+            class="theme-switch"
+            id="themeSwitch"
+            aria-label="Basculer entre mode clair et mode sombre"
+            aria-pressed="false">
+      <span class="theme-switch-thumb"></span>
+    </button>
+    <span aria-hidden="true">☀️</span>
+      </div>
+        <p class="about-theme-text">
+          Afin d’améliorer l’accessibilité du site et de répondre aux différents besoins des utilisateurs, un bouton de changement de mode clair/sombre est proposé. Ce dispositif permet de réduire la fatigue visuelle et d’optimiser la lisibilité selon les environnements lumineux.
+        </p>
+  </aside>
+  </div>
+</section>
+
+
+     <!-- 5. Objectifs & public cible -->
+<section class="about-block about-goals">
+  <div class="section-card-body two-columns about-goals-body">
+    <div class="about-col about-goals-left">
+      <video class="cible-video" autoplay loop muted playsinline>
+        <source src="images/cible_1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="about-col about-goals-right">
+      <div class="section-card-header left">
+        <span class="section-card-title-goal">OBJECTIFS & PUBLIC CIBLE</span>
+      </div>
+      <p id="goals-typing-text" aria-label="Objectifs du site et public cible">Ce site a été imaginé pour un public intéressé par les sciences de l'information, les médias, la recherche universitaire et les transformations numériques. L'objectif principal est de rendre les travaux d'Andrew Hoskins accessibles, structurés et compréhensibles, y compris pour un public non spécialiste.</p>
+    </div>
+  </div>
+
+  <div class="goals-list-wrapper">
+    <ul class="goals-list">
+      <li><strong>⭐️ Valoriser l'information</strong> en structurant les contenus et en les présentant de manière claire.</li>
+      <li><strong>⭐️ Faciliter l'expérience utilisateur</strong> grâce à une navigation simple et une interface visuellement cohérente.</li>
+      <li><strong>⭐️ Renforcer l'accessibilité</strong> via des choix graphiques et techniques adaptés (contrastes, mode clair/sombre, lisibilité).</li>
+    </ul>
+  </div>
+</section>
+
+
+
+    </section>
+  </main>
+
+<footer class="footer">
+  <p>
+    2025 Andrew Hoskins - Site réalisé par Laura Cocq--Duché.
+  </p>
+   <hr class="footer-separator">
+  <!-- Section deux colonnes -->
+  <div class="footer-columns">
+    <div class="footer-column">
+      <p>
+        Toutes les informations disponibles sur ce site ont été tirées à partir de sources diverses telles que les pages web :<br>
+      </p>
+      <ul class="footer-sources">
+        <li>andrewhoskins.net</li>
+        <li>scholar.google.com</li>
+        <li>euasu.org/academicians</li>
+        <li>researchgate.net/publication</li>
+        <li>global.oup.com/academic</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <p>
+        Merci pour l'attention que vous avez porté à ce site. Je suis actuellement étudiante en Information-Communication à l'IUT Bordeaux Montaigne mais également auto-entrepreneuse.<br><br>
+        N'hésitez pas à m'écrire à l'adresse suivante pour toute demande ou proposition : <br>
+        l.cocqduche@gmail.com
+      </p>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
